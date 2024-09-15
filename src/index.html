@@ -1,0 +1,644 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduCareCottage</title>
+
+    <!-- Tailwind CSS generated css file-->
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- Meta Tags -->
+    <meta
+      property="og:title"
+      content="Online Courses - Learn Everything, At Single Place | EduCare Cottage"
+    />
+    <meta
+      property="og:description"
+      content="We Provide Simple and Easy Language for Learning Basics of Technical Subjects."
+    />
+  </head>
+
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar made by Abubaker { START FROM HERE } -->
+    <div class="relative w-full bg-white">
+      <div
+        class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8"
+      >
+        <div class="inline-flex items-center space-x-2">
+            <svg
+            width="40"
+            height="46"
+            viewBox="0 0 50 56"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.2732 0.2528C20.8078 1.18964 2.12023 12.2346 1.08477 13.3686C0 14.552 0 14.7493 0 27.7665C0 39.6496 0.0986153 41.1289 0.83823 42.0164C2.12023 43.5449 23.2239 55.4774 24.6538 55.5267C25.9358 55.576 46.1027 44.3832 48.2229 42.4602C49.3077 41.474 49.3077 41.3261 49.3077 27.8158C49.3077 14.3055 49.3077 14.1576 48.2229 13.1714C46.6451 11.7415 27.1192 0.450027 25.64 0.104874C24.9497 -0.0923538 23.9142 0.00625992 23.2732 0.2528ZM20.2161 21.8989C20.2161 22.4906 18.9835 23.8219 17.0111 25.3997C15.2361 26.7803 13.8061 27.9637 13.8061 28.0623C13.8061 28.1116 15.2361 29.0978 16.9618 30.2319C18.6876 31.3659 20.2655 32.6479 20.4134 33.0917C20.8078 34.0286 19.871 35.2119 18.8355 35.2119C17.8001 35.2119 9.0233 29.3936 8.67815 28.5061C8.333 27.6186 9.36846 26.5338 14.3485 22.885C17.6521 20.4196 18.4904 20.0252 19.2793 20.4196C19.7724 20.7155 20.2161 21.3565 20.2161 21.8989ZM25.6893 27.6679C23.4211 34.9161 23.0267 35.7543 22.1391 34.8668C21.7447 34.4723 22.1391 32.6479 23.6677 27.9637C26.2317 20.321 26.5275 19.6307 27.2671 20.3703C27.6123 20.7155 27.1685 22.7864 25.6893 27.6679ZM36.0932 23.2302C40.6788 26.2379 41.3198 27.0269 40.3337 28.1609C39.1503 29.5909 31.6555 35.2119 30.9159 35.2119C29.9298 35.2119 28.9436 33.8806 29.2394 33.0424C29.3874 32.6479 30.9652 31.218 32.7403 29.8867L35.9946 27.4706L32.5431 25.1532C30.6201 23.9205 29.0915 22.7371 29.0915 22.5892C29.0915 21.7509 30.2256 20.4196 30.9159 20.4196C31.3597 20.4196 33.6771 21.7016 36.0932 23.2302Z"
+              fill="black"
+            ></path>
+          </svg>
+          <span class="font-bold">ECCLOGO</span>
+        </div>
+        <div class="hidden grow items-start lg:flex">
+          <ul class="ml-12 inline-flex space-x-8">
+            <li>
+              <a
+                href="#"
+                class="inline-flex items-center text-sm font-semibold text-gray-800 hover:text-gray-900"
+              >
+                Home
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="ml-2 h-4 w-4"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-flex items-center text-sm font-semibold text-gray-800 hover:text-gray-900"
+              >
+                About
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="ml-2 h-4 w-4"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="inline-flex items-center text-sm font-semibold text-gray-800 hover:text-gray-900"
+              >
+                Contact
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="ml-2 h-4 w-4"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="hidden space-x-2 lg:block">
+          <button
+            type="button"
+            class="rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
+            Sign In
+          </button>
+          <button
+            type="button"
+            class="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
+            Log In
+          </button>
+        </div>
+        <div class="lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-6 w-6 cursor-pointer"
+          >
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar made by Abubaker { ENDS HERE } -->
+
+
+    <!-- hero section made by Abubaker { STARTS HERE } -->
+        </nav>
+        <div class="relative isolate z-0 bg-white px-6 pt-14 lg:px-8 mb-28">
+          <div class="relative mx-auto max-w-2xl py-24">
+            <div class="absolute inset-x-0 -top-[4rem] -z-10 transform-gpu overflow-hidden blur-3xl md:-top-[10rem]">
+              <svg
+                class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
+                viewBox="0 0 1155 678"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)"
+                  fill-opacity=".3"
+                  d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
+                ></path>
+                <defs>
+                  <linearGradient
+                    id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533"
+                    x1="1155.49"
+                    x2="-78.208"
+                    y1=".177"
+                    y2="474.645"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#9089FC"></stop>
+                    <stop offset="1" stop-color="#FF80B5"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="text-center">
+              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                EduCare Cottage
+              </h1>
+              <p class="mt-6 text-lg leading-8 text-gray-600">
+                Education is the Greatest weapon of mankind.
+              </p>
+              <div class="mt-10 flex items-center justify-center gap-x-2">
+                <button
+                  type="button"
+                  class="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                >
+                  Courses ➛
+                </button>
+                <button
+                  type="button"
+                  class="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Hero section made by Abubaker { ENDS HERE } -->
+
+
+    <!-- Navigation Menu -->
+    <?php require 'menu.php'; ?>
+   <!-- I Abubaker removed the code for notification I have to make new notification system  -->
+
+    <!-- Homepage Indexes -->
+    <section
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-10 px-5"
+    >
+      <!-- School Courses -->
+      <div class="w-[300px] rounded-md border">
+        <a href="<?php require 'domainlink.php' ?>Indexes/phasesIndex.php">
+          <img
+            src="images/img1.jpg"
+            alt="School Courses Image"
+            class="h-[200px] w-full rounded-md object-cover"
+          />
+        </a>
+        <div class="p-4">
+          <h1 class="text-lg font-semibold">School Courses</h1>
+          <p class="mt-3 text-sm text-gray-600">
+            We provide class 5th, 8th, 10th and 12th courses of some subjects.
+          </p>
+          <button
+            type="button"
+            class="mt-4 rounded-sm bg-black px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
+            Open
+          </button>
+        </div>
+      </div>
+
+      <!-- Basic Courses -->
+      <div class="w-[300px] rounded-md border">
+        <a href="<?php require 'domainlink.php' ?>Indexes/phasesIndex.php">
+          <img
+            src="images/img1.jpg"
+            alt="Basic Courses Image"
+            class="h-[200px] w-full rounded-md object-cover"
+          />
+        </a>
+        <div class="p-4">
+          <h1 class="text-lg font-semibold">Basic Courses</h1>
+          <p class="mt-3 text-sm text-gray-600">
+            Basics of Math, Science and English will be available soon.
+          </p>
+          <button
+            type="button"
+            class="mt-4 rounded-sm bg-black px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
+            Open
+          </button>
+        </div>
+      </div>
+
+      <!-- Solved Exercises -->
+      <div class="w-[300px] rounded-md border">
+        <a href="<?php require 'domainlink.php' ?>notAvialable.php">
+          <img
+            src="images/img1.jpg"
+            alt="Solved Exercises Image"
+            class="h-[200px] w-full rounded-md object-cover"
+          />
+        </a>
+        <div class="p-4">
+          <h1 class="text-lg font-semibold">Solved Exercises</h1>
+          <p class="mt-3 text-sm text-gray-600">
+            It will be available soon for class 5th, 8th, 10th and 12th.
+          </p>
+          <button
+            type="button"
+            class="mt-4 rounded-sm bg-black px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
+            Open
+          </button>
+        </div>
+      </div>
+
+      <!-- PDF Section -->
+      <div class="w-[300px] rounded-md border">
+        <a href="<?php require 'domainlink.php' ?>Indexes/phasesIndex.php">
+          <img
+            src="images/img1.jpg"
+            alt="PDF Section Image"
+            class="h-[200px] w-full rounded-md object-cover"
+          />
+        </a>
+        <div class="p-4">
+          <h1 class="text-lg font-semibold">PDF Section</h1>
+          <p class="mt-3 text-sm text-gray-600">
+            It will be available soon for class 5th, 8th, 10th and 12th.
+          </p>
+          <button
+            type="button"
+            class="mt-4 rounded-sm bg-black px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
+            Open
+          </button>
+        </div>
+      </div>
+
+      <!-- Previous Exam Questions -->
+      <div class="w-[300px] rounded-md border">
+        <a href="<?php require 'domainlink.php' ?>notAvialable.php">
+          <img
+            src="images/img1.jpg"
+            alt="Previous Exam Questions Image"
+            class="h-[200px] w-full rounded-md object-cover"
+          />
+        </a>
+        <div class="p-4">
+          <h1 class="text-lg font-semibold">Previous Exam Questions</h1>
+          <p class="mt-3 text-sm text-gray-600">
+            It will be available soon for class 10th and 12th.
+          </p>
+          <button
+            type="button"
+            class="mt-4 rounded-sm bg-black px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
+            Open
+          </button>
+        </div>
+      </div>
+
+      <!-- Upcoming Courses -->
+      <div class="w-[300px] rounded-md border">
+        <a href="<?php require 'domainlink.php' ?>SchoolCourses/upcoming.php">
+          <img
+            src="images/img1.jpg"
+            alt="Upcoming Courses Image"
+            class="h-[200px] w-full rounded-md object-cover"
+          />
+        </a>
+        <div class="p-4">
+          <h1 class="text-lg font-semibold">Upcoming Courses</h1>
+          <p class="mt-3 text-sm text-gray-600">
+            All the upcoming content is under process.
+          </p>
+          <button
+            type="button"
+            class="mt-4 rounded-sm bg-black px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
+            Open
+          </button>
+        </div>
+      </div>
+
+      <!-- Know Your Syllabus -->
+      <div class="w-[300px] rounded-md border">
+        <a href="<?php require 'domainlink.php' ?>Indexes/phasesIndex.php">
+          <img
+            src="images/img1.jpg"
+            alt="Know Your Syllabus Image"
+            class="h-[200px] w-full rounded-md object-cover"
+          />
+        </a>
+        <div class="p-4">
+          <h1 class="text-lg font-semibold">Know Your Syllabus</h1>
+          <p class="mt-3 text-sm text-gray-600">
+            We provide topicwise course along with the course details.
+          </p>
+          <button
+            type="button"
+            class="mt-4 rounded-sm bg-black px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
+            Open
+          </button>
+        </div>
+      </div>
+
+      <!-- Latest Updates -->
+      <div class="w-[300px] rounded-md border">
+        <a href="<?php require 'domainlink.php' ?>SchoolCourses/updates.php">
+          <img
+            src="images/img1.jpg"
+            alt="Latest Updates Image"
+            class="h-[200px] w-full rounded-md object-cover"
+          />
+        </a>
+        <div class="p-4">
+          <h1 class="text-lg font-semibold">Latest Updates</h1>
+          <p class="mt-3 text-sm text-gray-600">
+            All the content recently updated will be shown in this page.
+          </p>
+          <button
+            type="button"
+            class="mt-4 rounded-sm bg-black px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
+            Open
+          </button>
+        </div>
+      </div>
+
+      <!--  -->
+
+      <!-- this is for the css styling of various parts of the code { START } [---------------{Warning}--------------- Do not unComment this section ]-->
+
+      <!-- this is for the css styling of various parts of the code { END } -->
+    </section>
+
+    <!-- This is Feature section made by Abubaker { STARTS HERE } -->
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40">
+        <div class="mx-auto max-w-xl text-center">
+          <div class="mx-auto inline-flex rounded-full bg-gray-100 px-4 py-1.5">
+            <p class="text-xs font-semibold uppercase tracking-widest text-black">
+              100+ Educational Courses
+            </p>
+          </div>
+          <h2 class="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+            Educare Cottage helps you to Success.
+          </h2>
+          <p class="mt-4 text-base leading-relaxed text-gray-600">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            Velit officia consequat duis enim velit mollit.
+          </p>
+        </div>
+        <div class="mt-12 grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
+          <div>
+            <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-9 w-9 text-gray-700"
+              >
+                <line x1="12" y1="2" x2="12" y2="22"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3 class="mt-8 text-lg font-semibold text-black">Affordable.</h3>
+            <p class="mt-4 text-sm text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <div>
+            <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-9 w-9 text-gray-700"
+              >
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="mt-8 text-lg font-semibold text-black">
+                Fast Learning Curve
+            </h3>
+            <p class="mt-4 text-sm text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <div>
+            <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-9 w-9 text-gray-700"
+              >
+                <path d="M12 3a6.364 6.364 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+              </svg>
+            </div>
+            <h3 class="mt-8 text-lg font-semibold text-black">
+                Structured Courses
+            </h3>
+            <p class="mt-4 text-sm text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <div>
+            <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-9 w-9 text-gray-700"
+              >
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+              </svg>
+            </div>
+            <h3 class="mt-8 text-lg font-semibold text-black">Latest Materials</h3>
+            <p class="mt-4 text-sm text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- This is Feature section made by Abubaker { ENDS HERE } -->
+      
+
+
+    <!-- Footer -->
+    <?php require 'footer.php'; ?>
+
+    <!-- Footer made by Abubaker { STARTS HERE } -->
+    <hr class="my-4" />
+    <footer class="w-full mt-8">
+        <div class="mx-auto flex max-w-6xl flex-col items-start space-x-8 md:flex-row">
+          <div class="w-full px-4 md:w-1/2 lg:px-0">
+            <h1 class="max-w-sm text-3xl font-bold">Join Our Community.</h1>
+            <form action="" class="mt-4 inline-flex w-full items-center md:w-3/4">
+              <input
+                class="flex h-10 w-full rounded-md border border-black/20 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                type="email"
+                placeholder="Email"
+              />
+              <button
+                type="button"
+                class="ml-4 rounded-full bg-black px-3 py-3 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4"
+                >
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="mt-8 grid grid-cols-2 gap-6 md:mt-0 lg:w-3/4 lg:grid-cols-3">
+            <div class="mb-8 lg:mb-0">
+              <p class="mb-6 text-lg font-semibold text-gray-700 ">Company</p>
+              <ul class="flex flex-col space-y-4 text-[14px] font-medium text-gray-500">
+                <li>About us</li>
+                <li>Company History</li>
+                <li>Our Team</li>
+                <li>Our Vision</li>
+                <li>Press Release</li>
+              </ul>
+            </div>
+            <div class="mb-8 lg:mb-0">
+              <p class="mb-6 text-lg font-semibold text-gray-700 ">Courses</p>
+              <ul class="flex flex-col space-y-4 text-[14px] font-medium text-gray-500">
+                <li>Maths</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+                <li>Biology</li>
+                <li>English</li>
+              </ul>
+            </div>
+            <div class="mb-8 lg:mb-0">
+              <p class="mb-6 text-lg font-semibold text-gray-700 ">Exam Prepretion</p>
+              <ul class="flex flex-col space-y-4 text-[14px] font-medium text-gray-500">
+                <li>Class 6th</li>
+                <li>Class 7th</li>
+                <li>Class 8th</li>
+                <li>Class 9th</li>
+                <li>Class 10th</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-8 flex justify-around align-middle my-10">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+        </div>
+        <hr class="my-4" />
+        <div class="mx-auto max-w-6xl items-center justify-between px-4 md:flex lg:px-0">
+          <div class="inline-flex items-center">
+            <svg
+              width="40"
+              height="46"
+              viewBox="0 0 50 56"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.2732 0.2528C20.8078 1.18964 2.12023 12.2346 1.08477 13.3686C0 14.552 0 14.7493 0 27.7665C0 39.6496 0.0986153 41.1289 0.83823 42.0164C2.12023 43.5449 23.2239 55.4774 24.6538 55.5267C25.9358 55.576 46.1027 44.3832 48.2229 42.4602C49.3077 41.474 49.3077 41.3261 49.3077 27.8158C49.3077 14.3055 49.3077 14.1576 48.2229 13.1714C46.6451 11.7415 27.1192 0.450027 25.64 0.104874C24.9497 -0.0923538 23.9142 0.00625992 23.2732 0.2528ZM20.2161 21.8989C20.2161 22.4906 18.9835 23.8219 17.0111 25.3997C15.2361 26.7803 13.8061 27.9637 13.8061 28.0623C13.8061 28.1116 15.2361 29.0978 16.9618 30.2319C18.6876 31.3659 20.2655 32.6479 20.4134 33.0917C20.8078 34.0286 19.871 35.2119 18.8355 35.2119C17.8001 35.2119 9.0233 29.3936 8.67815 28.5061C8.333 27.6186 9.36846 26.5338 14.3485 22.885C17.6521 20.4196 18.4904 20.0252 19.2793 20.4196C19.7724 20.7155 20.2161 21.3565 20.2161 21.8989ZM25.6893 27.6679C23.4211 34.9161 23.0267 35.7543 22.1391 34.8668C21.7447 34.4723 22.1391 32.6479 23.6677 27.9637C26.2317 20.321 26.5275 19.6307 27.2671 20.3703C27.6123 20.7155 27.1685 22.7864 25.6893 27.6679ZM36.0932 23.2302C40.6788 26.2379 41.3198 27.0269 40.3337 28.1609C39.1503 29.5909 31.6555 35.2119 30.9159 35.2119C29.9298 35.2119 28.9436 33.8806 29.2394 33.0424C29.3874 32.6479 30.9652 31.218 32.7403 29.8867L35.9946 27.4706L32.5431 25.1532C30.6201 23.9205 29.0915 22.7371 29.0915 22.5892C29.0915 21.7509 30.2256 20.4196 30.9159 20.4196C31.3597 20.4196 33.6771 21.7016 36.0932 23.2302Z"
+                fill="black"
+              ></path>
+            </svg>
+            <span class="ml-4 text-lg font-bold">ECCLOGO</span>
+          </div>
+          <div class="mt-4 md:mt-0">
+            <p class="text-sm font-medium text-gray-500">
+              © 2024 Educare Cottage. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+          <!-- Footer made by Abubaker { ENDS HERE } -->
+
+    <!-- JavaScript -->
+    <script src="<?php require 'domainlink.php' ?>JS/videosJS.js"></script>
+
+  </body>
+</html>
